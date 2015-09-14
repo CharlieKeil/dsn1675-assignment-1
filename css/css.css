@@ -7,17 +7,69 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
+header {
+  background-color: #212121;
+  padding: 1em 0 0 0;
 }
 
-img {
+.head {
+  background-image: url("../img/logo-01.svg");
+  background-repeat: no-repeat;
+  background-position: top left 10px;
+  background-size: 75px auto;
+}
+
+
+h1 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  padding: 0 0 0.5em 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  width: 25%;
+  float: left;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav a {
+  color: #fff;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  background-color: #212121;
+  border-radius: 0px;
+  text-decoration: none;
+}
+
+nav li a{
   width: 100%;
 }
 
-nav li {
-  display: inline;
-  text-align: center;
+.nav a:hover {
+  background-color: #000;
+}
+
+body {
+  margin: 0;
+  background-color: #e2e2e2;
+}
+
+.img img {
+  width: 90%;
+  left: 5%;
+  position: relative;
 }
 
 .banner {
@@ -26,6 +78,7 @@ nav li {
   font-size: .75rem;
   max-height: 75vh;
   overflow: hidden;
+  clear: both;
 }
 
 .banner img {
@@ -37,7 +90,7 @@ nav li {
   bottom: 2em;
   color: #fff;
   width: 100%;
-  text-shadow: 1px 1px 4px rgba (0,0,0,0.8);
+  text-shadow: 1px 1px 8px rgba (0,0,0,0.8);
 }
 
 .bannercontent h1 {
@@ -46,4 +99,56 @@ nav li {
 
 .bannercontent p {
   margin: 0;
+}
+
+.button {
+  display: inline-block;
+  clear: both;
+  width: 85%;
+  text-align: center;
+}
+
+
+
+.button dt a {
+  color: #fff;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  background-color: #212121;
+  border-radius: 0px;
+  text-decoration: none;
+  width: 85%;
+  margin: 0;
+}
+
+.list ol li{
+  padding: 0em;
+  tex-decoration: none;
+  list-style-type: none;
+}
+
+.list ol li p {
+  width: 50%;
+}
+
+footer {
+  margin: 0;
+  padding: 1em;
+  background-color: #212121;
+  color: #fff;
+}
+
+.footlink ol {
+  padding: 0;
+}
+
+.footlink li a {
+  display: inline-block;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footlink li {
+  text-decoration: none;
+  list-style-type: none;
 }
