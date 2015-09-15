@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
-
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 300;
 }
 
 *, *::before, *::after {
@@ -25,10 +26,33 @@ h1 {
   text-align: center;
   color: #fff;
   padding: 0 0 0.5em 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 400;
+}
+
+.buy a {
+  border: 2px;
+  float: right;
+  border-radius: 4px;
+  background-color: #B808FF;
+  position: absolute;
+  padding: 0.5em 2em 0.5em 2em;
+  left: 82.5%;
+  top: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.buy a:hover {
+  background-color: #000;
 }
 
 h2 {
   text-align: center;
+}
+
+h3 {
+  margin: 1em 0 0 2em;
 }
 
 .nav li {
@@ -72,6 +96,58 @@ body {
   position: relative;
 }
 
+dl {
+  margin: 0;
+}
+
+dl .date {
+  position: relative;
+  display: inline;
+  text-align: center;
+  float: left;
+  left:20%
+}
+
+.date {
+  padding: 1em;
+}
+
+dl .date dd {
+  margin: 0;
+}
+
+dl .build {
+  position: relative;
+  display: inline;
+  text-align: center;
+  float: left;
+  left:20%
+}
+
+.build {
+  padding: 1em;
+}
+
+dl .build dd {
+  margin: 0;
+}
+
+dl .loc {
+  position: relative;
+  display: inline;
+  text-align: center;
+  float: left;
+  left:20%
+}
+
+.loc {
+  padding: 1em;
+}
+
+dl .loc dd {
+  margin: 0;
+}
+
 .banner {
   position: relative;
   text-align: center;
@@ -91,14 +167,12 @@ body {
   color: #fff;
   width: 100%;
   text-shadow: 1px 1px 8px rgba (0,0,0,0.8);
-}
-
-.bannercontent h1 {
-
+  bottom: 35%
 }
 
 .bannercontent p {
   margin: 0;
+  font-size: 1.5em;
 }
 
 .button {
@@ -106,9 +180,10 @@ body {
   clear: both;
   width: 85%;
   text-align: center;
+  position: relative;
+  left: 7.5%;
+  margin: 0 0 1em 0;
 }
-
-
 
 .button dt a {
   color: #fff;
@@ -119,6 +194,72 @@ body {
   text-decoration: none;
   width: 85%;
   margin: 0;
+}
+
+.button dt a:hover {
+  background-color: #B808FF;
+}
+
+.tickets p {
+  text-align: center;
+  width: 80%;
+  left: 10%;
+  position: relative;
+}
+
+.tickets h3 {
+  text-align: center;
+}
+
+.buybut a {
+  color: #fff;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  background-color: #212121;
+  border-radius: 0px;
+  text-decoration: none;
+  text-align: center;
+  width: 25%;
+  margin: 0;
+  position: relative;
+  left: 25%;
+}
+
+.buybut a:hover {
+  background-color: #B808FF;
+}
+
+.banhead h2 {
+  color: #fff;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  background-color: #212121;
+  border-radius: 0px;
+  text-decoration: none;
+  width: 100%;
+  margin: 1em 0 0 0;
+  position: relative;
+}
+
+
+.bannercontent .banbut a {
+  color: #fff;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  background-color: #212121;
+  border-radius: 0px;
+  text-decoration: none;
+  width: 25%;
+  margin: 0;
+  position: relative;
+}
+
+.bannercontent h2 {
+  font-size: 2em;
+}
+
+.bannercontent .banbut a:hover {
+  background-color: #B808FF;
 }
 
 .list ol li{
@@ -138,6 +279,20 @@ footer {
   color: #fff;
 }
 
+.hours ol {
+  padding: 0;
+  list-style-type: none;
+}
+
+.hours a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hours a:hover {
+  color: #B808FF;
+}
+
 .footlink ol {
   padding: 0;
 }
@@ -146,6 +301,11 @@ footer {
   display: inline-block;
   text-decoration: none;
   list-style-type: none;
+  color: #fff;
+}
+
+.footlink li a:hover {
+  color: #B808FF;
 }
 
 .footlink li {
