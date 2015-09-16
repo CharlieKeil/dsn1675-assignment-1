@@ -99,51 +99,40 @@ dl {
   margin: 0;
 }
 
-dl .date {
+.date dl  {
   position: relative;
   display: inline;
   text-align: center;
   float: left;
-  left:20%
+  width: 30%;
+  left:5%;
 }
 
-.date {
-  padding: 1em;
-}
-
-dl .date dd {
+.date dl dd {
   margin: 0;
 }
 
-dl .build {
+ .build dl  {
   position: relative;
   display: inline;
   text-align: center;
   float: left;
-  left:20%
+  width: 30%;
 }
 
-.build {
-  padding: 1em;
-}
-
-dl .build dd {
+.build dl dd {
   margin: 0;
 }
 
-dl .loc {
+.loc dl {
   position: relative;
   display: inline;
   text-align: center;
   float: left;
-  left:20%
+  width: 30%;
 }
 
-.loc {
-  padding: 1em;
-}
-
-dl .loc dd {
+.loc dl dd {
   margin: 0;
 }
 
