@@ -1,3 +1,9 @@
+@-moz-viewport {width: device-width; scale: 1;}
+@-ms-viewport {width: device-width; scale: 1;}
+@-o-viewport {width: device-width; scale: 1;}
+@-webkit-viewport {width: device-width; scale: 1;}
+@viewport {width: device-width; scale: 1;}
+
 html {
   box-sizing: border-box;
   font-family: 'Alegreya Sans SC', sans-serif;
@@ -14,22 +20,65 @@ header {
 }
 
 .head {
+background-image: url("../img/logo-01.svg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: 75px auto;
+}
+
+h1 {
+margin: 0;
+text-align: center;
+color: #fff;
+padding: 0 0 0.5em 0;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-weight: 400;
+margin-top: 1.5em;
+}
+
+h3 {
+  margin: 0;
+}
+
+.buy a {
+border: 2px;
+float: right;
+border-radius: 4px;
+background-color: #B808FF;
+position: absolute;
+padding: 0.3em 1em 0.3em 1em;
+left: 40%;
+width: 20%;
+top: 25px;
+text-decoration: none;
+color: white;
+position: absolute;
+text-align: center
+}
+
+.buy a:hover {
+background-color: #000;
+}
+
+@media only screen and (min-width: 32.5em) {
+
+  .head {
   background-image: url("../img/logo-01.svg");
   background-repeat: no-repeat;
   background-position: top left 10px;
   background-size: 75px auto;
-}
+  }
 
-h1 {
+  h1 {
   margin: 0;
   text-align: center;
   color: #fff;
   padding: 0 0 0.5em 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 400;
-}
+  }
 
-.buy a {
+  .buy a {
   border: 2px;
   float: right;
   border-radius: 4px;
@@ -40,10 +89,14 @@ h1 {
   top: 25px;
   text-decoration: none;
   color: white;
-}
+  width: 15%;
+  text-align: center;
+  }
 
-.buy a:hover {
+  .buy a:hover {
   background-color: #000;
+  }
+
 }
 
 h2 {
@@ -54,9 +107,9 @@ h3 {
   margin: 1em 0 0 2em;
 }
 
+
 .nav li {
-  display: inline-block;
-  width: 25%;
+  width: 100%;
   float: left;
 }
 
@@ -69,7 +122,6 @@ h3 {
 
 .nav a {
   color: #fff;
-  display: inline-block;
   padding: 0.5em 0.75em;
   background-color: #212121;
   text-decoration: none;
@@ -82,6 +134,40 @@ nav li a{
 .nav a:hover {
   background-color: #000;
 }
+
+@media only screen and (min-width: 32.5em) {
+
+  .nav li {
+  display: inline-block;
+  width: 25%;
+  float: left;
+  }
+
+  .nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  }
+
+  .nav a {
+  color: #fff;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  background-color: #212121;
+  text-decoration: none;
+  }
+
+  nav li a{
+  width: 100%;
+  }
+
+  .nav a:hover {
+  background-color: #000;
+  }
+}
+
+
 
 body {
   margin: 0;
@@ -105,6 +191,15 @@ body {
   dt {
     margin: 0;
   }
+
+@media only screen and (min-width: 34.375em) {
+
+  html {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 32.5em) {
 
   .facts {
     overflow: hidden;
@@ -131,6 +226,7 @@ body {
   left: 66%;
   }
 
+}
 
 
 .banner {
@@ -249,12 +345,65 @@ body {
 
 .list ol li{
   padding: 0em;
-  tex-decoration: none;
+  text-decoration: none;
   list-style-type: none;
 }
 
 .list ol li p {
   width: 50%;
+}
+
+.list h3 {
+  margin: 0;
+}
+
+
+
+@media only screen and (min-width: 55em) {
+
+  html {
+    font-size: 19px;
+  }
+
+  .left {
+    float: left;
+    width: 50%;
+  }
+
+  .right {
+    float: right;
+    width: 50%;
+  }
+
+  .middle {
+    clear: both;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .buying {
+    clear: both;
+  }
+
+  .list {
+    margin: 1em;
+  }
+
+  .list p {
+    text-align: center;
+    margin: 0;
+  }
+
+  .list br {
+    text-align: center;
+    margin: 0 0 1em 0;
+  }
+
+  .list h3 {
+    text-align: center;
+    margin: 0;
+  }
 }
 
 footer {
