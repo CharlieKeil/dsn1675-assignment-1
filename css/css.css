@@ -382,8 +382,9 @@ body {
   }
 
   .middle {
+    max-width: 50%;
+    left: 25%;
     clear: both;
-    width: 50%;
     text-align: center;
     margin: 0;
   }
@@ -459,6 +460,48 @@ footer {
     display: block;
     width: 100%;
     text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 120em) {
+
+  html {
+    font-size: 140%;
+    line-height: 1.6;
+  }
+
+  h1,h2 {
+    font-size: 3em
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  .banner {
+    font-size: 1.5em;
+  }
+
+}
+
+@media print {
+
+  .nav {
+    display: none;
+  }
+
+  img {
+    max-width: 50%;
+  }
+
+  main a::after {
+    content: " (" attr(href) ")";
+    color: #666;
+  }
+
+  .button a {
+    display: none;
   }
 
 }
