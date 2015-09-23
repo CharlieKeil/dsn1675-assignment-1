@@ -6,6 +6,10 @@
 
 html {
   box-sizing: border-box;
+  ext-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 300;
 }
@@ -195,7 +199,8 @@ body {
 @media only screen and (min-width: 34.375em) {
 
   html {
-    font-size: 17px;
+    font-size: 110%;
+    line-height: 1.4;
   }
 }
 
@@ -362,7 +367,8 @@ body {
 @media only screen and (min-width: 55em) {
 
   html {
-    font-size: 19px;
+    font-size: 120%;
+    line-height: 1.5;
   }
 
   .left {
